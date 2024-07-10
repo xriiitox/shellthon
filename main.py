@@ -1,16 +1,11 @@
+#!/usr/bin/env python3
 import os
 import socket
-import sys
-
-import pygame
-import pygame.freetype
 
 from run_command import run_cmd
 
+
 def main():
-    ps1: str = f"{os.getlogin()}@{socket.gethostname()}:{os.getcwd()} $"
-    path: str = os.getenv("PATH")
-    
     running = True
 
     while running:
